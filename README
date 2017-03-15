@@ -1,8 +1,9 @@
-WikiCalendar Plugin for DokuWiki
+WikiLendar Plugin for DokuWiki
 
-All documentation for the WikiCalendar Plugin is available online at:
+All documentation for the WikiLendar Plugin is available online at:
 
-  * http://dokuwiki.org/plugin:wikicalendar
+  * http://dokuwiki.org/plugin:wikilendar
 
-(c) 2009 by Michael Klier <chi@chimeric.de>
+Bugfixes and more: (c) 2017 by Feralheart <gyula210@gmail.com>
+Original project: WikiCalendar (c) 2009 by Michael Klier <chi@chimeric.de>
 See COPYING for license info.
