@@ -6,7 +6,6 @@
 div.dokuwiki div.plugin_wikicalendar {
   border: 1px solid __border__;
   padding: 1em 1em 1em 1.5em;
-  margin: 1em;
   float: left;
 }
 
@@ -41,7 +40,6 @@ div.dokuwiki table.plugin_wikicalendar td.weekday {
  
 div.dokuwiki table.plugin_wikicalendar td.day,
 div.dokuwiki table.plugin_wikicalendar td.today {
-  padding: 0.2em;
 }
  
 div.dokuwiki table.plugin_wikicalendar td.blank {
@@ -56,9 +54,7 @@ div.dokuwiki table.plugin_wikicalendar td.today:hover {
 div.dokuwiki table.plugin_wikicalendar div.noevent,
 div.dokuwiki table.plugin_wikicalendar div.isevent {
   width: 7em;
-  height: 3em;
-  padding: 0.2em;
-  float: right;
+  height: 5em;
 }
  
 div.dokuwiki table.plugin_wikicalendar td.today div.noevent,
@@ -78,10 +74,6 @@ div.dokuwiki table.plugin_wikicalendar div.day_num a:hover {
   text-decoration: none;
 }
 
-div.dokuwiki table.plugin_wikicalendar td.day div.abstract,
-div.dokuwiki table.plugin_wikicalendar td.today div.abstract {
-  display: none;
-}
 
 div.dokuwiki table.plugin_wikicalendar td.day:hover div.abstract,
 div.dokuwiki table.plugin_wikicalendar td.today:hover div.abstract {
@@ -114,6 +106,29 @@ div.dokuwiki a.plugin_wikicalendar_btn {
 
 div.dokuwiki a.plugin_wikicalendar_btn:hover {
   text-decoration: none;
+}
+
+div.dokuwiki div.plugin_wikicalendar {
+  width: 94%;
+}
+ 
+div.dokuwiki table.plugin_wikicalendar{
+  width: 100%;
+}
+ 
+div.dokuwiki table.plugin_wikicalendar td {
+  width:14%;
+}
+ 
+div.dokuwiki table.plugin_wikicalendar div.noevent,
+div.dokuwiki table.plugin_wikicalendar div.isevent {
+  width: 3em;/* 7em; */
+}
+ 
+div.dokuwiki table.plugin_wikicalendar td.day:hover div.abstract,
+div.dokuwiki table.plugin_wikicalendar td.today:hover div.abstract {
+  left: 10px;/* 70px; */
+  width: 8em;/* auto; */
 }
 
 /**

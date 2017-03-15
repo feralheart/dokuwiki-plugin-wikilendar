@@ -303,15 +303,15 @@ CALHEAD;
         if(file_exists(wikiFN($wp))) {
             $out .= '<div class="isevent">';
             if(auth_quickaclcheck($wp) >= AUTH_READ) {
-                $out .= '<a href="' . wl($wp, array('do' => 'edit', 'plugin_wikicalendar_redirect_id' => $ID, 'plugin_wikicalendar_month' => $this->showMonth, 'plugin_wikicalendar_year' => $this->showYear)) . '" class="plugin_wikicalendar_btn" title="' . $lang['btn_edit'] . '"><img src="' . DOKU_BASE . 'lib/images/edit.gif" alt="' . $lang['edit_btn'] . '"/></a>' . DOKU_LF;
+				 $out .= '<a href="' . wl($wp, array('do' => 'edit', 'plugin_wikicalendar_redirect_id' => $ID, 'plugin_wikicalendar_month' => $this->showMonth, 'plugin_wikicalendar_year' => $this->showYear)) . '" class="plugin_wikicalendar_btn" title="' . $lang['btn_create'] . '"><img src="' . DOKU_BASE . 'lib/images/info.png" alt="' . $lang['edit_btn'] . '" /></a>' . DOKU_LF;
             }
             $out .= '<div class="day_num"><a href="' . wl($wp) . '" class="wikilink1" title="' . $wp . '">'.$day.'</a></div>';
-            $out .= '<div class="abstract">' . p_get_metadata($wp, 'description abstract') . '</div>' . DOKU_LF;
+            $out .= '<div class="abstract">' . p_get_metadata($wp, 'title') . '</div>' . DOKU_LF;
         } else {
             $out .= '<div class="noevent">';
             if(auth_quickaclcheck($wp) >= AUTH_CREATE) {
                 //$out .= $this->_btn_add_day($wp);
-                $out .= '<a href="' . wl($wp, array('do' => 'edit', 'plugin_wikicalendar_redirect_id' => $ID, 'plugin_wikicalendar_month' => $this->showMonth, 'plugin_wikicalendar_year' => $this->showYear)) . '" class="plugin_wikicalendar_btn" title="' . $lang['btn_create'] . '"><img src="' . DOKU_BASE . 'lib/images/edit.gif" alt="' . $lang['edit_btn'] . '" /></a>' . DOKU_LF;
+                 $out .= '<a href="' . wl($wp, array('do' => 'edit', 'plugin_wikicalendar_redirect_id' => $ID, 'plugin_wikicalendar_month' => $this->showMonth, 'plugin_wikicalendar_year' => $this->showYear)) . '" class="plugin_wikicalendar_btn" title="' . $lang['btn_create'] . '"><img src="' . DOKU_BASE . 'lib/images/info.png" alt="' . $lang['edit_btn'] . '" /></a>' . DOKU_LF;
             }
             $out .= '<div class="day_num">'.$day.'</div>';
         }
